@@ -1,0 +1,10 @@
+body{
+	background-color: yellow;
+}
+
+.main_div{
+	width: 50%;
+	background-color: transparent;
+	border-radius: 40px;
+	border:1px dotted black;
+}
