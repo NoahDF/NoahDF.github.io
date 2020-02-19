@@ -1,0 +1,84 @@
+#package{
+	width: 720px;
+	height: 480px;
+	background-color: black;
+	/* horizontal + vertical center align - parent div */
+	position: absolute;
+	/*//////*/
+}
+
+#name{
+	/* horizontal + vertical center align - child div */
+	margin: 0;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/*//////*/
+	font-size: 100px;
+	color:white;
+	font-weight: bold;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: black;
+	letter-spacing: -3px;
+}
+
+#subtitle1{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	font-family: sans-serif;
+	font-size: 10px;
+	color: white;
+	font-style: italic;
+	letter-spacing: 2px;
+
+}
+
+#subtitle2{
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	font-family: sans-serif;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 20px;
+	color: black;
+	background-color: orange;
+	padding:100px;
+}
+
+#weight{
+	position: absolute;
+	bottom: 7%;
+	left: 3%;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+#calories{
+	position: absolute;
+	bottom: 7%;
+	right: 3%;
+	font-family: sans-serif;
+	font-size: 9px;
+	text-align: center;
+	background-color:white;
+	border:3px solid black;
+	border-radius: 12%;
+	padding: 6px;
+}
+
+#cal_number{
+	font-size: 19px;
+}
+
+#original_img_container{
+	width: 720px;
+}
+
+#original_img{
+	width: 100%;
+}
