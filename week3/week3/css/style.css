@@ -37,8 +37,8 @@
 }
 
 #subtitle2{
-	position: absolute;
-	top: 70%;
+	position: relative;
+	top: 30%;
 	left: 50%;
 	transform: translate(-50%, 0%);
 	font-family: sans-serif;
@@ -47,8 +47,7 @@
 	font-size: 20px;
 	color: black;
 	background-color: orange;
-	padding:100px;
-}
+	padding:10px;
 
 #weight{
 	position: absolute;
