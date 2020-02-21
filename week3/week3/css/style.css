@@ -1,10 +1,15 @@
 #package{
 	width: 720px;
-	height: 480px;
+	height: 420px;
 	background-color: black;
 	/* horizontal + vertical center align - parent div */
 	position: absolute;
+	z-index: 1;
 	/*//////*/
+}
+
+#package:hover{
+	display:none;
 }
 
 #name{
@@ -20,7 +25,7 @@
 	font-weight: bold;
 	-webkit-text-stroke-width: 3px;
 	-webkit-text-stroke-color: black;
-	letter-spacing: -3px;
+	letter-spacing: 10px;
 }
 
 #subtitle1{
@@ -29,7 +34,7 @@
 	left: 50%;
 	transform: translate(-50%, 0%);
 	font-family: sans-serif;
-	font-size: 10px;
+	font-size: 12px;
 	color: white;
 	font-style: italic;
 	letter-spacing: 2px;
@@ -49,17 +54,19 @@
 	background-color: orange;
 	padding:10px;
 	width: 60%;
+	text-align: center;
 }
 
 #subtitle3{
 	position: relative;
-	top: 20%;
+	top: 35%;
 	left: 50%;
 	transform: translate(-50%, 0%);
 	font-family: sans-serif;
 	letter-spacing: 2px;
 	font-size: 15px;
 	color: white;
+	text-align: center;
 }
 
 #calories{
@@ -81,6 +88,8 @@
 
 #original_img_container{
 	width: 720px;
+	position: absolute;
+
 }
 
 #original_img{
