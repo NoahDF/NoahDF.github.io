@@ -1,15 +1,90 @@
-body{
-	background-color: #dddddd;
+#package{
+	width: 720px;
+	height: 420px;
+	background-color: black;
+	/* horizontal + vertical center align - parent div */
+	position: absolute;
+	/*//////*/
 }
 
-.main_div{
-	width: 50%;
-	background-color: transparent;
-	border-radius: 40px;
-	border:1px dotted black;
+#name{
+	/* horizontal + vertical center align - child div */
+	margin: 0;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/*//////*/
+	font-size: 100px;
+	color:white;
+	font-weight: bold;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: black;
+	letter-spacing: 10px;
 }
 
-#img1{
-	width: 50%;
-	padding: 20px;
+#subtitle1{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	font-family: sans-serif;
+	font-size: 12px;
+	color: white;
+	font-style: italic;
+	letter-spacing: 2px;
+
+}
+
+#subtitle2{
+	position: relative;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	font-family: sans-serif;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 20px;
+	color: black;
+	background-color: orange;
+	padding:10px;
+	width: 60%;
+	text-align: center;
+}
+
+#subtitle3{
+	position: relative;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	font-family: sans-serif;
+	letter-spacing: 2px;
+	font-size: 15px;
+	color: white;
+	text-align: center;
+}
+
+#calories{
+	position: absolute;
+	bottom: 7%;
+	right: 3%;
+	font-family: sans-serif;
+	font-size: 9px;
+	text-align: center;
+	background-color:white;
+	border:3px solid black;
+	border-radius: 12%;
+	padding: 6px;
+}
+
+#cal_number{
+	font-size: 19px;
+}
+
+#original_img_container{
+	width: 720px;
+}
+
+#original_img{
+	width: 100%;
 }
