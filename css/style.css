@@ -1,90 +1,40 @@
-#package{
-	width: 720px;
-	height: 420px;
-	background-color: black;
-	/* horizontal + vertical center align - parent div */
+.title{
 	position: absolute;
-	/*//////*/
-}
-
-#name{
-	/* horizontal + vertical center align - child div */
-	margin: 0;
-	position: absolute;
-	top: 10%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	/*//////*/
-	font-size: 100px;
-	color:white;
-	font-weight: bold;
-	-webkit-text-stroke-width: 3px;
+	font-family: 'Krona One', sans-serif;
+	font-size: 80px;
+	transition: -webkit-text-stroke-color 2s, color 2s;
+}
+.title:hover{
+	color:transparent;
+	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: black;
-	letter-spacing: 10px;
 }
-
-#subtitle1{
-	position: absolute;
-	top: 20%;
-	left: 50%;
-	transform: translate(-50%, 0%);
-	font-family: sans-serif;
-	font-size: 12px;
-	color: white;
-	font-style: italic;
-	letter-spacing: 2px;
-
+.menu{
+	margin:24px;
 }
-
-#subtitle2{
-	position: relative;
-	top: 30%;
-	left: 50%;
-	transform: translate(-50%, 0%);
-	font-family: sans-serif;
-	font-weight: bold;
-	letter-spacing: 2px;
-	font-size: 20px;
-	color: black;
-	background-color: orange;
-	padding:10px;
-	width: 60%;
-	text-align: center;
+.menu_list{
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	font-family: 'Bad Script', cursive;
+  	font-size: 80px;
 }
-
-#subtitle3{
-	position: relative;
-	top: 35%;
-	left: 50%;
-	transform: translate(-50%, 0%);
-	font-family: sans-serif;
-	letter-spacing: 2px;
-	font-size: 15px;
-	color: white;
-	text-align: center;
+.work_list{
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	font-family: 'Bad Script', cursive;
+  	font-size: 28px;
 }
-
-#calories{
-	position: absolute;
-	bottom: 7%;
-	right: 3%;
-	font-family: sans-serif;
-	font-size: 9px;
-	text-align: center;
-	background-color:white;
-	border:3px solid black;
-	border-radius: 12%;
-	padding: 6px;
+#menu_home:hover{
+	color:skyblue;
 }
-
-#cal_number{
-	font-size: 19px;
+#menu_about:hover{
+	color:skyblue;
 }
-
-#original_img_container{
-	width: 720px;
-}
-
-#original_img{
-	width: 100%;
+#menu_works:hover{
+	color:skyblue;
 }
