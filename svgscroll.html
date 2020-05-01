@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			margin:0px;
+		}
+		#space1 {
+			position: relative;
+		  	background-color: blue;
+		}
+		#space2 {
+			position: relative;
+		  	background-color: pink;
+		}
+		#space3 {
+			position: relative;
+		  	background-color: orange;
+		}
+		@keyframes updown {
+		  0% {
+		    top: 50%;
+		  }
+
+		  50% {
+		    top: 52%;
+		  }
+
+		  100% {
+		    top: 50%;
+		  }
+		}
+		#svg_container1{
+			cursor: pointer;
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			animation: updown 1s ease infinite;
+		}
+
+		#svg_container2{
+			cursor: pointer;
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			padding:5px;
+		}
+		#svg_container3{
+			cursor: pointer;
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			animation: updown 1s ease infinite;
+		}
+		#pump {
+		    fill: none;
+		    stroke: #7d2d68;
+		    stroke-width: 1px;
+		    stroke-dasharray: 1853px;
+		    stroke-dashoffset: 1853px;
+		}
+		.svg_drawing_animation{
+			
+			animation: move 3s linear forwards;  
+		    animation-delay: .2s;
+		}
+
+		@keyframes move {
+		    100% {
+		        stroke-dashoffset: 0;
+		    }
+		}
+
+	</style>
+</head>
+<body>
+	<div id="space1">
+		<div id="svg_container1" onClick="pageScrollDown()">
+			<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="285.32" height="548.7" viewBox="0 0 285.32 548.7">
+				<path d="M0,292.28C57.13,357.8,111.06,463.51,142.68,548.7c31.58-85.19,85.51-190.9,142.64-256.42L172.68,333V0h-60V333Z"/>
+			</svg>
+		</div>
+	</div>
+	<div id="space2">
+		<div id="svg_container2" onClick="pageScrollDown2()">
+			<svg id= "svg"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="drawing.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="400"
+     inkscape:cy="560"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path id = "design"
+       style="fill:#ff7f2a;fill-opacity:0.00405549;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 76.646021,108.97193 c 43.845239,94.49407 -1.511913,66.52384 43.845239,94.49407 45.35711,27.97023 -4.53571,72.57143 16.63095,11.33928 21.16665,-61.23214 73.32733,-138.339263 27.21426,-78.61905 -46.11307,59.72024 -39.30949,92.98215 -52.91664,36.28572 -13.607143,-56.69644 -46.869055,-93.738077 -7.55952,-52.16073 39.30951,41.57739 77.86305,89.95835 39.30951,41.57739 -38.55356,-48.38096 -38.55356,-55.18453 -38.55356,-55.18453 0,0 -24.946423,-96.005926 12.09524,-11.33927 37.04165,84.66666 19.65476,144.3869 37.04165,84.66666 17.38689,-59.72025 19.65475,-65.01191 19.65475,-65.01191 l -37.04164,-8.31548 c 0,0 -36.28571,-70.303546 0,0 36.28569,70.30358 123.97616,53.67263 36.28569,70.30358 C 84.961504,193.63861 103.10436,252.6029 84.961504,193.63861 66.818635,134.67432 -17.092073,76.466017 66.818635,133.91837 150.72935,191.37076 216.49716,180.03147 150.72935,190.61481 84.961504,201.19814 91.00912,298.71599 84.205544,201.19814 77.401974,103.68027 10.878165,-57.337556 77.401974,104.43622 143.92578,266.21004 187.01503,304.00766 143.92578,266.21004 100.8365,228.41243 167.36028,318.37076 100.8365,228.41243 34.312685,138.45409 -53.377811,133.16242 34.312685,138.45409 c 87.690485,5.29167 34.7738,-39.30952 87.690485,5.29167 52.91663,44.60119 141.36306,13.60714 52.91663,44.60119 C 86.473407,219.341 109.15198,328.19813 86.473407,219.341 63.794825,110.48384 -17.092073,50.007677 63.794825,110.48384 144.68173,170.96004 222.54479,224.63266 144.68173,170.96004 66.818635,117.28742 15.413872,61.346962 66.818635,117.28742 c 51.404765,55.94049 16.630959,91.47024 52.160725,53.67262 35.52974,-37.79762 -1.51191,-64.25596 35.52974,-37.79762 37.04165,26.45834 72.57141,40.06549 37.04165,32.50597 -35.52975,-7.55954 -65.76782,-3.77978 -41.57736,-28.72621 24.19046,-24.94644 24.19046,-24.94644 24.19046,-24.94644"
+       id="path3713"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ff7f2a;fill-opacity:0.00405549;stroke:#000000;stroke-width:0.51556158px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 147.46989,237.19972 C 209.45837,331.74477 -3.3128526,51.995096 -3.3128526,51.995096 L 67.052435,156.90122"
+       id="path3715"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
+
+		 </div>
+	</div>
+	<div id="space3">
+		<div id="svg_container3" onClick="pageScrollUp()">
+			<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="285.32" height="548.7" viewBox="0 0 285.32 548.7">
+				<path d="M285.32,256.42C228.19,190.9,174.26,85.19,142.65,0,111.06,85.19,57.13,190.9,0,256.42l112.65-40.75v333h60v-333Z"/>
+			</svg>
+		 </div>
+	</div>
+
+	<script type="text/javascript">
+		/* code for set full window height for each div#space1, space2, space3 */
+		/* to get window's height, use 'window.innerHeight' */
+		var space1 = document.getElementById("space1");
+		space1.style.height = window.innerHeight + "px";
+		var space2 = document.getElementById("space2");
+		space2.style.height = window.innerHeight + "px";
+		var space3 = document.getElementById("space3");
+		space3.style.height = window.innerHeight + "px";
+
+		/* implement automatic scroll */
+		/* these functions below are called when each div#space1, div#space2, div#space3 is clicked */
+		/* To move scroll down to specific point, use 'window.scrollBy([x],[y])' */
+		function pageScrollDown() {
+		    window.scrollBy(0,window.innerHeight);
+		}
+		function pageScrollDown2() {
+		    window.scrollBy(0,window.innerHeight*2);
+		}
+		/* To move scroll up to the top, use 'document.documentElement.scrollTop = 0' */
+		/* 'window.scrollBy' only works when the scroll is incremented(when scrolling down) */
+		function pageScrollUp() {
+		    document.documentElement.scrollTop = 0;
+		}
+
+		/* when we want to trigger something by user's activity, we use 'document.addEventLister' */
+		/* to get more info about the triggers other than 'scroll', plz visit here */
+		/* this code below will let browser draw pump svg logo when an user scrolls down and gets to the part where the svg is located. */
+		/* detailed explanation is on the class doc */
+		document.addEventListener('scroll', function (e) {
+			var pumpSvgContainer = document.getElementById("svg_container2");
+			var scrolledTop  = window.pageYOffset + window.innerHeight;
+			var pumpSvgContainerOffset = window.innerHeight + pumpSvgContainer.offsetTop;
+			var isPumpVisible = scrolledTop > pumpSvgContainerOffset;
+			if (isPumpVisible) {
+				document.getElementById('pump').classList.add('svg_drawing_animation');
+			}
+		});
+		
+	</script>
+
+</body>
+</html>
