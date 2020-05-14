@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+      background-color: gray;
+    }
+  @keyframes background_animation {
+  0%   { opacity: 1; }
+  99%  { opacity: 0; z-index: -100}
+  100% { opacity: 0; z-index: -100}
+}
+/* Slideshow container */
+.slideshow-container {
+  width: 60%;
+  position: relative;
+  background: #f1f1f1f1;
+  margin:0px auto;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  height: 400px;
+  text-align: center;
+}
+
+/* assign images of project to each slide div */
+
+#slide1{
+  background-image: url('week10/park.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#slide2{
+  background-image: url('week10/waitingroom.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#slide3{
+  background-image: url('week10/noahfleissquarantlife.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#slide4{
+  background-image: url('week10/noah-fleiss-folder-poetry.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#slide5{
+  background-image: url('week10/wireframe.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#slide6{
+  background-image: url('week10/light.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.description{
+  position: absolute; 
+  left:7%; 
+  bottom:7%;
+  background-color: orange;
+  padding:8px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+</style>
+</head>
+<div class="landing_animation_container" style="
+  width: 100%;
+  height: 100%;
+  background: black;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 0;
+  animation-name: background_animation;
+  animation-duration: 2s;
+  animation-fill-mode:forwards;
+  animation-delay: 2s;">
+  </div>
+<body>
+<div>
+  <div class="slideshow-container">
+
+  <div id="slide1" class="mySlides">
+    <div class="description">
+      <p class="author">Park</p>
+      <a href="week10/park.html" class="link">Go to the page</a>
+    </div>
+  </div>
+
+  <div id="slide2" class="mySlides">
+    <div class="description">
+      <p class="author">The Waiting Room of Life</p>
+      <a href="week10/wait.html" class="link">Go to the page</a>
+    </div>
+  </div>
+
+  <div id="slide3" class="mySlides">
+    <div class="description">
+      <p class="author">quarantine journal</p>
+      <a href="week10/journal.html" class="link">Go to the page</a>
+    </div>
+  </div>
+  
+    <div id="slide4" class="mySlides">
+    <div class="description">
+      <p class="author">folder poetry</p>
+      <a href="week10/folder.html" class="link">Go to the page</a>
+    </div>
+  </div>
+  
+      <div id="slide5" class="mySlides">
+    <div class="description">
+      <p class="author">wireframe for the thing you are looking at (my website?)</p>
+      <a href="week10/wireframe.html" class="link">Go to the page</a>
+    </div>
+  </div>
+  
+      <div id="slide6" class="mySlides">
+    <div class="description">
+      <p class="author">that time last month i felt like i was floating</p>
+      <a href="week10/light.html" class="link">Go to the page</a>
+    </div>
+  </div>
+
+  <!-- left/right side button -->
+  <a class="prev" onclick="setIndexFromSideButton(-1)">❮</a>
+  <a class="next" onclick="setIndexFromSideButton(1)">❯</a>
+
+  </div>
+
+</div>
+
+<script>
+
+// before user clicks any of side arrow buttons, initiate the slide show with the first slide image. 
+var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function setIndexFromSideButton(n){
+
+  // increment index number depends on the value 'n' so that we can figure out which slide has to be shown on the webpage
+  slideIndex = slideIndex + n;
+
+
+  // call and execute the function showSlides()
+  showSlides();
+
+}
+
+function showSlides() {
+
+  // ask browser search and get every HTML element with the class name 'mySlides' and assign those elements to variable 'slides'
+  var slideDivElements = document.getElementsByClassName("mySlides"); 
+
+
+  // if the variable slideIndex is larger than the number of slides, reset the slideIndex to 1 so that user can get back to the first slide  
+  if (slideIndex > slideDivElements.length) {slideIndex = 1} 
+
+
+  // if the variable slideIndex is smaller than 1, reset the slideIndex to the biggest index number so that user can get to the last slide
+  if (slideIndex < 1) {slideIndex = slideDivElements.length} 
+
+
+  // change the style - display property of every slide (the elements inside 'slideDivElements' ) to 'none'
+  for (var i = 0; i < slideDivElements.length; i++) {
+      slideDivElements[i].style.display = "none";  
+  }
+
+
+  // change the style - display property of the slide which has to be shown on webpage to 'block'
+  slideDivElements[slideIndex-1].style.display = "block";  
+
+}
+</script>
+
+<a href="../index.html">home</a>
+</body>
+</html> 
