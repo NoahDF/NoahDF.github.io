@@ -2,7 +2,14 @@
 <html>
 <head>
 <style>
-
+body{
+      background-color: gray;
+    }
+  @keyframes background_animation {
+  0%   { opacity: 1; }
+  99%  { opacity: 0; z-index: -100}
+  100% { opacity: 0; z-index: -100}
+}
 /* Slideshow container */
 .slideshow-container {
   width: 60%;
